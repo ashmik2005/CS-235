@@ -1,5 +1,32 @@
 “ // Here till this code we have just initiated the size of queens and created a function factorial which calculates the factorial in a parameter int x // “
-
+/* State Space:- An 8X8 matrix with any arrangement of n<=8 queens
+* Initial State:- No queens on the board(i.e., all entries are null)
+* - - - - - - - -
+* - - - - - - - -
+* - - - - - - - -
+* - - - - - - - -
+* - - - - - - - -
+* - - - - - - - -
+* - - - - - - - -
+* - - - - - - - -
+* Transition Operator:- Add a new queen in an empty row
+* Goal state:- 8 Queens placed on the board such that all queens are in non-attacking position
+* For example,
+* - - Q - - - - -
+* - - - - - Q - -
+* - - - - - - - Q
+* Q - - - - - - -
+* - - - Q - - - -
+* - - - - - - Q -
+* - - - - Q - - -
+* - Q - - - - - -
+* Cost:- One per queen placed
+* Heuristic:- Number of pairs of Queens on board in attacking position
+*
+* Submitted by:- Ashmik Harinkhede
+* Roll no:- 1801068
+* B.Tech 2nd Year CSE
+*/
 import java.util.*;
 
 public class Assignment_2
